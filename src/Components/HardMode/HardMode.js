@@ -78,7 +78,7 @@ export const HardMode = () => {
   const handleClick = (value, i) => {
     handleClickCards(value, i, isRotate, result, copyCards, setIsRotate);
   };
-  const result = calculateResult(chronometer, allRightTrue);
+  const result = calculateResult(chronometer, allRightTrue, hardMode);
   if (chronometer > 0 && !result) {
     setTimeout(() => {
       setChronometer(chronometer - 1);

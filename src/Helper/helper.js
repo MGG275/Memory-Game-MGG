@@ -16,13 +16,18 @@ export const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");
 };
 
-export const calculateResult = (chronometer, allRightTrue) => {
+export const calculateResult = (chronometer, allRightTrue, easyNormalMode, hardMode) => {
   if (chronometer === 0 && !allRightTrue) {
     return "Sorry you lost the game";
   }
-  if (chronometer >= 0 && chronometer !== "" && allRightTrue) {
+  if (chronometer >= 0 && chronometer !== "" && allRightTrue && easyNormalMode) {
     return `Congratulation you won the game. It took you ${
-      60 - chronometer
+      50 - chronometer
+    } seconds to complete it`;
+  }
+	if (chronometer >= 0 && chronometer !== "" && allRightTrue && hardMode) {
+    return `Congratulation you won the game. It took you ${
+      45 - chronometer
     } seconds to complete it`;
   }
 };
