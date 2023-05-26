@@ -43,6 +43,7 @@ export const NormalMode = () => {
   const [copyCards, setCopyCards] = useState(shuffleCards(cardsArray));
   const [isRotate, setIsRotate] = useState([]);
   let allRightTrue = true;
+  let easyNormalMode = true
 
   copyCards.forEach((element) => {
     if (!element.right) {
@@ -51,7 +52,7 @@ export const NormalMode = () => {
   });
   useEffect(() => {
     setTimeout(() => {
-      setChronometer(60);
+      setChronometer(50);
       for (let i = 0; i < cardsArray.length; i++) {
         copyCards[i].selected = false;
       }
@@ -75,7 +76,7 @@ export const NormalMode = () => {
     }, 1000);
   }
   const handleReset = () => {
-    handleResetGame(setIsRotate, cardsArray, setChronometer, setCopyCards);
+    handleResetGame(setIsRotate, cardsArray, setChronometer, setCopyCards, easyNormalMode);
   };
 
   return (
