@@ -73,7 +73,7 @@ export const HardMode = () => {
     return () => {
       document.removeEventListener("contextmenu", deshabilitarClickDerecho);
     };
-  }, []);
+  }, [copyCards, cardsArray.length]);
   const handleClick = (value, i) => {
     handleClickCards(value, i, isRotate, result, copyCards, setIsRotate);
   };
