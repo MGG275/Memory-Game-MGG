@@ -1,0 +1,136 @@
+.principal-screen{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(270deg, #FFE0A2 5%, #FDA1A8 50%, #FFE0A2 100%) 50%;
+}
+.title{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+  align-items: center;
+	background-color: #5876bbed;
+	margin-top: 50px;
+	margin-bottom: 85px;
+	width: 70%;
+	height: 90px;
+	border-radius: 10px;
+	color: white;
+}
+.title h1{
+	font-family: 'Love Ya Like A Sister', cursive;
+	position: absolute;
+	right: calc(50%);
+	font-size: 2.7rem;
+}
+.title .carts{
+	position: absolute;
+	left: 65%;
+}
+.title .carts img{
+	height: 180px;
+}
+.title .carts .back-cart{
+	position: absolute;
+	rotate: -28deg;
+	bottom: calc(50% - 75px);
+}
+.title .carts .front-cart{
+	position: absolute;
+	rotate: 30deg;
+	left: calc(50% + 80px);
+	top: calc(50% - 70px);
+}
+.buttons{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 250px;
+	margin-bottom: 35px;
+}
+button{
+	font-family: 'Love Ya Like A Sister', cursive;
+	width: 150px;
+	height: 50px;
+	margin: 15px;
+	font-size: 1.3rem;
+	border: solid 3px #a3ef98;
+	border-radius: 8px;
+	background-color: #16682f;
+	color: white;
+  transition: 0.8s;
+}
+button:hover{
+	background-color: #a3ef98;
+	color: black;
+	font-weight: 700;
+  box-shadow: 0 0 20px #16682f, 0 0 20px #67d379, 0 0 30px 8px #16682f,
+    0 0 10px #67d379;
+  transition: 0.8s;
+  border: 3px solid #16682f;
+}
+.footer{
+	width: 98%;
+	text-align: center;
+	font-family: 'Love Ya Like A Sister', cursive;
+	font-size: 1.3rem;
+}
+.footer hr{
+	border-color: black;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.footer a{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-size: 1.4rem;
+}
+.footer a:hover{
+	color: #16682f;
+}
+@media(max-width: 900px){
+	.title{
+		width: 70%;
+		height: 65px;
+	}
+	.title h1{
+		font-size: 2rem;
+	}
+	.title .carts img{
+		height: 120px;
+	}
+	.title .carts .back-cart{
+		bottom: calc(50% - 55px);
+	}
+	.title .carts .front-cart{
+		left: calc(50% + 55px);
+		top: calc(50% - 50px);
+	}
+}
+@media(max-width: 680px){
+	.title{
+		width: 75%;
+	}
+	.title h1{
+		font-size: 1.6rem;
+	}
+}
+@media(max-width: 500px){
+	.title{
+		width: 87%;
+		text-align: center;
+	}
+	.title .carts{
+		left: 58%;
+	}
+	.title .carts .front-cart{
+		left: calc(50% + 45px);
+	}
+	.title .carts img{
+		height: 90px;
+	}
+}
