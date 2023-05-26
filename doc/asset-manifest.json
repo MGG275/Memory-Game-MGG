@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c223555.css",
+    "main.js": "/static/js/main.08adf4c0.js",
+    "static/media/giraffe.png": "/static/media/giraffe.70403ffa0dc22cde0aae.png",
+    "static/media/owl.png": "/static/media/owl.acba6907d88a34b5ceed.png",
+    "static/media/tiger-removebg-preview.png": "/static/media/tiger-removebg-preview.6ebb385d170115ff16fe.png",
+    "static/media/elephant.png": "/static/media/elephant.d71c9daba3b30eef95d6.png",
+    "static/media/porcupine.png": "/static/media/porcupine.14d21e4b14e135bd431b.png",
+    "static/media/lion.png": "/static/media/lion.54a4d1b47ae0f4c54e92.png",
+    "static/media/rhinoceros.png": "/static/media/rhinoceros.39607d0c17f90a18b9e3.png",
+    "static/media/sheep.png": "/static/media/sheep.adb2326440cbbc3b948c.png",
+    "static/media/Cart_Back without BG.png": "/static/media/Cart_Back without BG.7153fd0ef820c2fee660.png",
+    "static/media/raccoon.png": "/static/media/raccoon.1ded38b1f58d402d47d4.png",
+    "static/media/wild-pig.png": "/static/media/wild-pig.f2dcc9a467a9ececca33.png",
+    "static/media/deer.png": "/static/media/deer.1a7ab6ff1c1ec4d9063c.png",
+    "static/media/koala.png": "/static/media/koala.35e1a4a8e74815d09612.png",
+    "static/media/rabbit.png": "/static/media/rabbit.ad550e2082f83ff18097.png",
+    "static/media/monkey.png": "/static/media/monkey.5b2b401ccecc3d0cdc90.png",
+    "static/media/crocodile.png": "/static/media/crocodile.38322beb435539a51428.png",
+    "static/media/fox.png": "/static/media/fox.e64608a46e31fe476af1.png",
+    "static/media/chiken.png": "/static/media/chiken.b511c7c5edfa22e4aff1.png",
+    "static/media/sloth.png": "/static/media/sloth.c72546fbc4e721fc50e7.png",
+    "static/media/hippo.png": "/static/media/hippo.a8f37e07d1aa46489f68.png",
+    "static/media/meerkat.png": "/static/media/meerkat.17ccb0f39b503e62b95c.png",
+    "static/media/pig.png": "/static/media/pig.07913ec81032ed020df9.png",
+    "static/media/duck.png": "/static/media/duck.d32e9add3e7279227c78.png",
+    "static/media/walrus.png": "/static/media/walrus.008befc5c3c060f5e8bc.png",
+    "static/media/penguin.png": "/static/media/penguin.13fb7e9c5ae5cd027653.png",
+    "static/media/seal.png": "/static/media/seal.9a8a1fa0ad2d9f570678.png",
+    "static/media/shark.png": "/static/media/shark.e8aa43df9fbd82f36ed0.png",
+    "static/media/Cart_Front without BG.png": "/static/media/Cart_Front without BG.b14a94a517b3e94bc82f.png",
+    "index.html": "/index.html",
+    "main.9c223555.css.map": "/static/css/main.9c223555.css.map",
+    "main.08adf4c0.js.map": "/static/js/main.08adf4c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c223555.css",
+    "static/js/main.08adf4c0.js"
+  ]
+}
