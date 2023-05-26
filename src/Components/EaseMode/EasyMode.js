@@ -44,6 +44,7 @@ export const EasyMode = () => {
       allRightTrue = false;
     }
   });
+
   useEffect(() => {
     setTimeout(() => {
       setChronometer(60);
@@ -59,7 +60,8 @@ export const EasyMode = () => {
     return () => {
       document.removeEventListener("contextmenu", deshabilitarClickDerecho);
     };
-  }, []);
+  }, [copyCards, cardsArray.length]);
+
   const handleClick = (value, i) => {
     handleClickCards(value, i, isRotate, result, copyCards, setIsRotate);
   };
