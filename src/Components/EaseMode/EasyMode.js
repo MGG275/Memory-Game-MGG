@@ -37,6 +37,7 @@ export const EasyMode = () => {
   ];
   const [copyCards, setCopyCards] = useState(shuffleCards(cardsArray));
   const [isRotate, setIsRotate] = useState([]);
+  const [attempts, setAttempts] = useState(0);
   let allRightTrue = true;
   let easyNormalMode = true
 
@@ -64,9 +65,9 @@ export const EasyMode = () => {
   }, [copyCards, cardsArray.length]);
 
   const handleClick = (value, i) => {
-    handleClickCards(value, i, isRotate, result, copyCards, setIsRotate);
+    handleClickCards(value, i, isRotate, result, copyCards, setIsRotate, attempts, setAttempts);
   };
-  const result = calculateResult(chronometer, allRightTrue, easyNormalMode);
+  const result = calculateResult(chronometer, allRightTrue, attempts);
   if (chronometer > 0 && !result) {
     setTimeout(() => {
       setChronometer(chronometer - 1);

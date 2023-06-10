@@ -16,19 +16,14 @@ export const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");
 };
 
-export const calculateResult = (chronometer, allRightTrue, easyNormalMode, hardMode) => {
+export const calculateResult = (chronometer, allRightTrue, attempts) => {
   if (chronometer === 0 && !allRightTrue) {
     return "Sorry the time is over, you lost the game";
   }
-  if (chronometer >= 0 && chronometer !== "" && allRightTrue && easyNormalMode ) {
+  if (chronometer >= 0 && chronometer !== "" && allRightTrue) {
     return `Congratulation you won the game. It took you ${
-      50 - chronometer
-    } seconds to complete it`;
-  }
-	if (chronometer >= 0 && chronometer !== "" && allRightTrue && hardMode && !easyNormalMode) {
-    return `Congratulation you won the game. It took you ${
-      45 - chronometer
-    } seconds to complete it`;
+      attempts
+    } tries to complete it`;
   }
 };
 
@@ -38,7 +33,9 @@ export const handleClickCards = (
   isRotate,
   result,
   copyCards,
-  setIsRotate
+  setIsRotate,
+  attempts,
+  setAttempts
 ) => {
   if (value.selected === false && isRotate.length < 2 && !result) {
     copyCards[i].selected = true;
@@ -58,6 +55,7 @@ export const handleClickCards = (
           setIsRotate([]);
         }, 700);
       }
+      setAttempts(attempts + 1)
     }
   }
 };
