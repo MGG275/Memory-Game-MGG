@@ -52,6 +52,7 @@ export const HardMode = () => {
   const [copyCards, setCopyCards] = useState(shuffleCards(cardsArray));
   const [isRotate, setIsRotate] = useState([]);
   let allRightTrue = true;
+  let easyNormalMode = false
   let hardMode = true
 
   copyCards.forEach((element) => {
@@ -85,7 +86,7 @@ export const HardMode = () => {
     }, 1000);
   }
   const handleReset = () => {
-    handleResetGame(setIsRotate, cardsArray, setChronometer, setCopyCards, hardMode);
+    handleResetGame(setIsRotate, cardsArray, setChronometer, setCopyCards, hardMode, easyNormalMode);
   };
 
   return (

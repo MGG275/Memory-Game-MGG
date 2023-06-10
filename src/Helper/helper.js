@@ -18,14 +18,14 @@ export const classNames = (...classes) => {
 
 export const calculateResult = (chronometer, allRightTrue, easyNormalMode, hardMode) => {
   if (chronometer === 0 && !allRightTrue) {
-    return "Sorry you lost the game";
+    return "Sorry the time is over, you lost the game";
   }
-  if (chronometer >= 0 && chronometer !== "" && allRightTrue && easyNormalMode) {
+  if (chronometer >= 0 && chronometer !== "" && allRightTrue && easyNormalMode ) {
     return `Congratulation you won the game. It took you ${
       50 - chronometer
     } seconds to complete it`;
   }
-	if (chronometer >= 0 && chronometer !== "" && allRightTrue && hardMode) {
+	if (chronometer >= 0 && chronometer !== "" && allRightTrue && hardMode && !easyNormalMode) {
     return `Congratulation you won the game. It took you ${
       45 - chronometer
     } seconds to complete it`;
