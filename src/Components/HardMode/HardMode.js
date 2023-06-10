@@ -79,14 +79,14 @@ export const HardMode = () => {
   const handleClick = (value, i) => {
     handleClickCards(value, i, isRotate, result, copyCards, setIsRotate);
   };
-  const result = calculateResult(chronometer, allRightTrue, hardMode);
+  const result = calculateResult(chronometer, allRightTrue, hardMode,  easyNormalMode);
   if (chronometer > 0 && !result) {
     setTimeout(() => {
       setChronometer(chronometer - 1);
     }, 1000);
   }
   const handleReset = () => {
-    handleResetGame(setIsRotate, cardsArray, setChronometer, setCopyCards, hardMode, easyNormalMode);
+    handleResetGame(setIsRotate, cardsArray, setChronometer, setCopyCards, hardMode);
   };
 
   return (
